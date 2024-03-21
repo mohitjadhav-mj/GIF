@@ -1,0 +1,163 @@
+*
+{
+padding:0;
+margin:0;
+}
+body
+{
+  overflow-x:hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*layout1*/
+.layout1_image {
+    display: inline-block;
+    overflow: hidden;
+    padding-top: 5.3vw;
+}
+.layout1_image img {
+    width: 47vw;
+    height: auto;
+}
+.layout1_intro {
+    display: inline-block;
+    overflow: hidden;
+    padding: 10vw 8vw 4vw 8vw;
+    width: 45vw;
+}
+.layout1_intro h1, .layout1_intro h3 {
+    font-family: 'League Spartan', sans-serif;
+    color: #120052;
+    text-align: center;
+}
+.layout1_intro h1 {
+    font-weight: bold;
+    font-size: 3vw;
+    padding: 0;
+    margin: 0;
+}
+
+.layout1_intro p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* device view of the page*/
+@media screen and (max-width: 768px){
+    .layout1_intro h1 {
+        margin-top: 35px;
+        padding-top: 30px;
+        font-size: 20px;
+        padding-left: 120px;
+    }
+    .h3, h3 {
+    font-size: 18px;
+    padding-left: 140px;
+    }
+    layout1_image img {
+    width: 47vw;
+    height: auto;
+    }
+
+    .layout1_image  {
+        position: absolute;
+        margin-top: 70px;;
+    }
+    .layout1_intro {
+    width: inherit;
+    }
+}
+
+
+/*layout2*/
+.summits {
+    text-align: center;
+    color: #120052;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
+    padding: 4vw 0 0 0;
+    margin-bottom: 0;
+    font-size: 4.5vw;
+}
+.pic1 img{
+    width:100vw;
+    height:auto;
+    padding: 4vw 5.9vw 4vw 4vw;
+}
+.h2style {
+    color: #120052;
+    font-family: 'Antonio', sans-serif;
+    font-weight: bold;
+    padding: 1vw 6vw 0.7vw 8vw;
+}
+.layout2_txt {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 6vw 1vw 8vw;
+    font-size: large;
+}
+.objective {
+    display: inline-block;
+}
+.impact ul, .objective ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    padding: 0 0 0 10vw;
+}
+.impact {
+    display: inline-block;
+    margin: 1vw auto 0.7vw 12vw;
+}
+.impact2 {
+    overflow: hidden;
+    padding-bottom: 4.6vw;
+}
+.impact3 {
+    overflow: hidden;
+    padding-bottom: 2.85vw;
+}
+.impact4 {
+    overflow: hidden;
+    padding-bottom: 1.2vw;
+}
+.impact5 {
+    overflow: hidden;
+}
+.objective5 {
+    overflow: hidden;
+}
+@media screen and (max-width:1215px) and (min-width: 1056px) {
+    .impact {
+        margin: 1vw auto 0.7vw 1vw;
+    }
+}
+@media screen and (max-width:1056px) {
+    .objective {
+        width: 45vw;
+    }
+    .impact {
+        width: 45vw;
+        margin: 0 auto 0.7vw -3vw;
+    }
+}
+
+
+/*scrolling animation*/
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+  }
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+  @media(prefers-reduced-motion)
+  {
+    .hidden{
+      transition: none;
+    }
+  }
+
